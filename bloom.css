@@ -1,0 +1,297 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+ :root {
+  --primary-color: #330033;
+  --secondary-color: #800080;
+  --background-color: #f2e6f2;
+  --paragraphy-font-family: "Raleway", sans-serif;
+  --heading-font-family: "Roboto",sans-serif;
+}
+
+body{
+
+  color: var(--primary-color);
+  scroll-behavior: smooth;
+  
+ }
+p{
+    font-family: var(--paragraphy-font-family);
+    text-align: center;
+    line-height: 1.4;
+
+}
+h1,h2,h4,h5,h6,a{
+    font-family: var(--heading-font-family);
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+/**************************************************/
+           /*   HOME HEADER SECTION   */
+/**************************************************/
+
+header{
+    display: block;
+    position: relative;
+    background-color: var(--background-color);
+    padding: 1rem;
+}
+.header-image{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: .8rem;
+padding: 1rem auto;
+margin: 1rem;
+
+  
+}
+.sheBloom-logo{
+   width: 10rem;
+    height: auto;
+   
+}
+.home-heading{
+   
+    font-size: 1.4rem;
+}
+
+.donate-btn:link,
+.donate-btn:visited{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: .5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#menu{
+    width: 1.6rem;
+    background: var(--primary-color);
+    height: 0.17rem;
+    position: relative;
+    cursor: pointer;
+
+ 
+}
+#menu::before,#menu::after{
+    content: "";
+     width: 1.6rem;
+    background: var(--primary-color);
+    height: 0.17rem;
+    position: absolute;
+    transition: all 0.3s;
+   
+}
+#menu::before{
+    top: -0.4rem;
+}
+#menu::after{
+    top: 0.4rem;
+}
+#menu.show{
+    background-color: transparent;
+}
+
+#menu.show::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+#menu.show::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+/**************************************************/
+           /*   HOME MAIN SECTION   */
+/**************************************************/
+
+.motto-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+}
+.challenges-section{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem ;
+   
+   
+}
+
+.problems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+.problems h2{
+    text-align: left;
+    font-size: 1rem;
+}
+.icon{
+    width: 1.2rem;
+    cursor: pointer;
+    
+}
+#problem-hide{
+    display: none;
+     box-shadow: 0 0 4px 4px rgba(161, 97, 173, 0.1);
+    border-radius: 0 0 10px 10px;
+   
+   
+   
+  
+}
+#problem-hide.unhide{
+    display: block;
+}
+.icon.rotate{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+.problem-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    
+}
+.problem-list li{
+    list-style-type: circle;
+    font-family: var(--paragraphy-font-family);
+    font-size: 0.8rem;
+}
+/* How we bloom girls section */
+
+.how-we-bloom-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1rem;
+}
+.help-bloom{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+}
+.bloom-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   box-shadow: 0 0 4px 4px rgba(161, 97, 173, 0.1);
+}
+.bloom-box h3 {
+    font-family: var(--heading-font-family);
+    
+}
+.bloom-box p{
+    text-align: left;
+}
+.bloom-box h3, .bloom-box p{
+  padding: 0.6rem;
+}
+.bloom-box a:link,
+.bloom-box a:visited{
+   padding: .4rem 0.8rem;
+   margin: 1rem auto;
+   
+}
+.sheblooms{
+    background:linear-gradient(to bottom,rgba(144, 10, 206, 0.1),rgba(21, 1, 36, 0.1)),url(images/flower.webp);
+    padding: 1rem;
+    margin: 1rem 0 ;
+    
+}
+.sheblooms p{
+  
+    color: var(--background-color);
+    font-weight: 500;
+}
+i{
+    padding: 1rem;
+    display: block;
+   
+}
+
+/**************************************************/
+           /*   FOOTER   */
+/**************************************************/
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin: 2rem 0 0 0;
+}
+.quick-links,.contact-info, form, .follow-us{
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    gap: 1rem;
+   
+}
+
+.follow-links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.links-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+footer h5,label{
+    color: var(--background-color);
+    font-weight: 700;
+}
+footer li{
+    color: rgb(227, 68, 11);
+    font-size: 0.8rem;
+}
+footer p{
+    color: var(--background-color);
+}
+footer label, footer li{
+    
+    font-family: var(--heading-font-family);
+}
+.join-btn{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+ footer form{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+    border: 1px solid var(--background-color);
+    margin: 1rem 0;
+    padding: 1rem;
+
+}
+footer a:link,
+footer a:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 0.8rem;
+}
+footer a:hover,
+footer a:active{
+    color: #800080;
+}
