@@ -62,14 +62,14 @@ margin: 1rem;
 }
 .home-heading{
    
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .donate-btn:link,
 .donate-btn:visited{
     display: inline-block;
     background-color: var(--secondary-color);
-    padding: .5rem 1rem;
+    padding: 1rem 1.4rem;
     color: #fff;
     text-decoration: none;
     margin: 1rem;
