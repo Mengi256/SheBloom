@@ -403,8 +403,57 @@ i{
     font-size: 2.6rem;
     font-style: italic;
 }
+.remitly-link:link,
+.remitly-link:visited{
+    display: inline-block;
+    color: #ff4500;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
 
 
+
+/**************************************************/
+           /*   GOAL SECTION   */
+/**************************************************/
+.goals-title,.join-title{
+    margin: 2rem 1rem;
+    text-align: left;
+}
+.goals{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+.goal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+}
+.goal img{
+    width: 100%;
+    max-width: 4rem;
+    border-radius: 50%;
+    background-color: #ff4500;
+    padding: 0.8rem;
+}
+.goal h3{
+    font-family: var(--heading-font-family);
+    color: var(--secondary-color);
+}
+.join-para{
+    text-align: left;
+    padding: 1rem;
+}
 
 /**************************************************/
            /*   FOOTER   */
