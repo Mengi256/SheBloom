@@ -81,13 +81,50 @@ margin: 1rem;
     border-radius: 10px;
     cursor: pointer;
 }
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 1000;
+}
 
+#navigation.show {
+    transform: translateX(0);
+    background-color: var(--secondary-color);
+}
+#navigation li{
+    display: none;
+}
+#navigation.show li{
+    display: block;
+}
+
+#navigation li a:link,
+#navigation li a:visited{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--background-color);
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+}
 #menu{
     width: 1.6rem;
+
     background: var(--primary-color);
     height: 0.17rem;
-    position: relative;
+    position: fixed;
     cursor: pointer;
+    z-index: 1101;
+
 
  
 }
@@ -108,15 +145,20 @@ margin: 1rem;
 }
 #menu.show{
     background-color: transparent;
+
 }
 
 #menu.show::after{
     transform: rotate(45deg);
     top: 0;
+    background-color: var(--background-color);
+    
 }
 #menu.show::before{
     transform: rotate(-45deg);
     top: 0;
+    background-color: var(--background-color);
+    
 }
 
 
@@ -127,9 +169,13 @@ margin: 1rem;
 .motto-section{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem 0.5rem;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
     margin: 2rem 0;
+}
+.reality-heading{
+  margin: 1rem 0;
 }
 .challenges-section{
     display: flex;
@@ -196,6 +242,7 @@ margin: 1rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.8rem;
+    align-items: center;
 }
 .bloom-box{
     display: flex;
@@ -212,9 +259,14 @@ margin: 1rem;
 .bloom-box p{
     text-align: left;
 }
-.bloom-box h3, .bloom-box p{
-  padding: 0.6rem;
+.bloom-box-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
+
 .bloom-box a:link,
 .bloom-box a:visited{
    padding: .4rem 0.8rem;
@@ -240,7 +292,19 @@ i{
    
 }
 .donate-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: var(--background-color);
+    width: 100%;
+    max-width: 31rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.donate-box-btn:link,
+.donate-box-btn:visited{
+    display: inline-block;
+    margin: 0 auto;
 }
 .donate{
     display: flex;
@@ -262,22 +326,32 @@ i{
 .our-story-section{
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
     gap: 2rem;
     padding: 1rem;
+    width: 100%;
 }
 .story p{
     text-align: left;
 }
 .story{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+   
+}
+.story img{
+    width: 100%;
     
 }
-.story-first-para{
-    margin: 2rem 0;
-}
+ .story p, .story span{
+    padding: 1rem;
+} 
 .last-story{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     border: 1px solid var(--secondary-color);
     padding: 1rem;
     background-color: #800080;
@@ -299,8 +373,10 @@ i{
 .mission-vision{
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
 }
 
 .mission-vision h3{
@@ -314,6 +390,7 @@ i{
     flex-direction: column;
     gap: 1rem;
 }
+
 .values-box h3{
    text-align: center; 
    margin-bottom: 1rem;
@@ -515,6 +592,7 @@ i{
     border-radius: 10px;
     width: 100%;
     padding: 2rem;
+    max-width: 40rem;
 }
 .message-btn{
     background-color: #f2e6f2;
@@ -528,8 +606,12 @@ i{
            /*   FOOTER   */
 /**************************************************/
 footer{
-    display: flex;
-    flex-direction: column;
+    background-color: var(--primary-color);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
     margin: 2rem 0 0 0;
@@ -551,24 +633,24 @@ footer{
     flex-direction: column;
     gap: 0.6rem;
 }
-footer h5,label{
+.footer h5,label{
     font-family: var(--heading-font-family);
     color: var(--background-color);
     font-weight: 700;
 }
-footer li{
+.footer li{
     color: rgb(227, 68, 11);
     font-size: 0.8rem;
 }
-footer input, .contact-us-form input, textarea{
+.footer input, .contact-us-form input, textarea{
     padding: 1rem;
     background-color:var(--background-color);
     border: none;
 }
-footer p{
+.footer p{
     color: var(--background-color);
 }
-footer label, footer li{
+.footer label, .footer li{
     
     font-family: var(--heading-font-family);
 }
@@ -584,25 +666,247 @@ footer label, footer li{
     color: var(--background-color);
 }
 
- footer form{
+ .footer form{
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
     border: 1px solid var(--background-color);
-    margin: 1rem 0;
+
     padding: 1rem;
+    width: 100%;
+    
 
 }
-footer a:link,
-footer a:visited{
+.footer a:link,
+.footer a:visited{
     display: inline-block;
     text-decoration: none;
     color: var(--background-color);
     font-size: 0.8rem;
 }
-footer a:hover,
-footer a:active{
+.footer a:hover,
+.footer a:active{
     color: #800080;
 }
-footer img{
+.footer img{
     margin: 1rem auto;
     
 }
+.news-letter-heading{
+    text-align: center;
+}
+
+
+/**************************************************/
+           /*   RESPONSIVE    */
+/**************************************************/
+
+@media(min-width: 700px){
+    header{
+        background: url(images/founder.webp);
+    }
+    /* HOME PAGE */
+.motto-section{
+grid-template-columns: 1fr 1fr;
+padding: 2rem;
+    
+}
+.motto{
+    font-size: 0.8rem;
+    border-left: 3px solid #ff4500;
+    border-radius: 10px;
+    padding: 0.8rem;
+    
+}
+.help-bloom{
+    
+    grid-template-columns: 1fr 1fr;
+    
+}
+/* ABOUT PAGE */
+
+ .our-story-section{
+    grid-template-columns: 1fr 1fr ;
+    max-width: 70rem;
+    margin: 2rem auto;
+} 
+.story{
+     box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    background-color: #f5cdf5;
+    border-radius: 10px;
+    overflow: hidden ;
+    padding: 2rem;
+    
+}
+/* .last-story{
+    grid-column: 1/-1;
+    max-width: 100%;
+} */
+.mission-vision{
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 60rem;
+    margin: 2rem auto;
+    background-color: #f3daf3;
+}
+.volunteer-box{
+    background-color: transparent;
+}
+.values-box, .volunteer-box{
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #ff4500;
+    border-radius: 10px;
+}
+.values-box{
+    padding: 7.8rem 0;
+}
+.founders{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50rem;
+    margin: 2rem auto;
+}
+/* GOALS */
+.goals{
+    grid-template-columns: 1fr 1fr;
+}
+.footer{
+    grid-template-columns:  1fr 1fr;
+    padding: 2rem;
+}
+.follow-us{
+    margin: 1rem auto;
+}
+.footer form{
+    max-width: 40rem;
+    grid-column: 1/-1;
+    margin: 1rem auto;
+    
+}
+}
+
+@media(min-width:900px)
+{ /* HOME PAGE */
+body{
+    background-color: var(--background-color);
+}
+
+
+.header-image{
+    max-width: 50rem;
+    margin: 1rem auto;
+}
+.motto-section{
+grid-template-columns: 1fr 1fr;
+padding: 2rem;
+    
+}
+.motto{
+    font-size: 1rem;
+    border-left: 6px solid #ff4500;
+    border-radius: 10px;
+    padding: 4rem;
+    border-right: 6px solid #ff4500;
+}
+.motto-img{
+    border-radius: 10px;
+}
+.challenges-section{
+    max-width: 50rem;
+    margin: 1rem auto;
+    
+}
+.problems{
+    background-color: var(--secondary-color);
+}
+.problems h2{
+    color: var(--background-color);
+}
+.icon{
+    color:var(--background-color);
+    width: 2rem;
+}
+.help-bloom{
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    
+}
+.home-donations{
+    margin: 2rem auto;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.donate-box{
+    box-shadow: 8px 8px 20px rgba(240, 126, 233, 0.6);
+}
+.how-we-bloom-section{
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+/* ABOUT PAGE */
+
+ .our-story-section{
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 70rem;
+    margin: 2rem auto;
+} 
+
+.last-story{
+    grid-column: 1/-1;
+    max-width: 100%;
+} 
+.mission-vision{
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 60rem;
+    margin: 2rem auto;
+    background-color: #f3daf3;
+}
+
+.values-box{
+    padding: 7.8rem 0;
+}
+.founders{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50rem;
+    margin: 2rem auto;
+}
+/* GOALS */
+.goals{
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 70rem;
+    margin: 2rem auto;
+    gap: 4rem;
+}
+.goals-title{
+    text-align: center;
+}
+.join-us{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    max-width: 40rem;
+    margin: 2rem auto;
+}
+.footer{
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 4rem;
+}
+.follow-us{
+    margin: 1rem auto;
+}
+.footer form{
+    max-width: 40rem;
+    grid-column: 1/-1;
+    margin: 1rem auto;
+    
+}
+}
+
+
