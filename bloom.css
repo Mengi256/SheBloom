@@ -600,7 +600,19 @@ i{
     padding: 1rem;
     border: none;
 }
+.message{
+    max-width: 500px;
 
+    background-color: #f5cdf5;
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-left: 6px solid #330033;
+    border-radius: 10px;
+}
 
 /**************************************************/
            /*   FOOTER   */
@@ -708,6 +720,9 @@ footer{
 grid-template-columns: 1fr 1fr;
 padding: 2rem;
     
+}
+.message{
+    margin: 2rem auto;
 }
 .motto{
     font-size: 0.8rem;
