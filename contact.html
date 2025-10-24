@@ -50,12 +50,14 @@
             
         </div>
         
-        <form class="contact-us-form" method="post" action="https://form.submit.co/shebloom256@gmail.com">
+        <form class="contact-us-form" action="https://formsubmit.co/shebloom256@gmail.com" method="POST">
             <h3 class="contact-us-form-heading">Send us a message</h3>
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
+            <input type="hidden" name="next" value="https://mengi256.github.io/SheBloom/message.html">
+            <input type="hidden" name="captcha" value="false">
             <label for="message">Write us a message</label>
             <textarea id="message" name="message" rows="6" placeholder=" Type your message here---" required></textarea>
             <button type="submit" class="message-btn">Send Message</button>
