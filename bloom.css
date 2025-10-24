@@ -480,13 +480,20 @@ i{
     
 
 }
-.contact-list{
+.contact-lists{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 1rem;
     padding: 0.6rem;
 
 }
+.contact-list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .contact-link:link,
 .contact-link:visited{
     display: inline-block;
@@ -499,7 +506,10 @@ i{
     text-align: center;
     margin-bottom: 1rem;
 }
-
+.contact-icon{
+    color: #ff4500;
+    font-size: 1.4rem;
+}
 .contact-us-form{
     background-color: var(--secondary-color);
     border-radius: 10px;
