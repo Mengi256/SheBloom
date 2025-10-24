@@ -29,6 +29,9 @@ h1,h2,h4,h6,a{
     font-family: var(--heading-font-family);
     text-align: center;
 }
+section{
+    margin-bottom: 1rem;
+}
 img{
     width: 100%;
 }
@@ -454,6 +457,43 @@ i{
     text-align: left;
     padding: 1rem;
 }
+/**************************************************/
+           /*   CONTACT US   */
+/**************************************************/
+.contact-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.contact-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    background-color:#f3daf3;
+    padding: 1.6rem;
+    border-radius: 10px;
+
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-us-form{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.message-btn{
+    background-color: #f2e6f2;
+    color: var(--secondary-color);
+    padding: 1rem;
+    border: none;
+}
+
 
 /**************************************************/
            /*   FOOTER   */
@@ -491,7 +531,7 @@ footer li{
     color: rgb(227, 68, 11);
     font-size: 0.8rem;
 }
-footer input{
+footer input, .contact-us-form input, textarea{
     padding: 1rem;
     background-color:var(--background-color);
     border: none;
@@ -503,15 +543,18 @@ footer label, footer li{
     
     font-family: var(--heading-font-family);
 }
-.join-btn{
+.join-btn, .message-btn{
     font-weight: bold;
-    background-color: var(--secondary-color);
-    color: var(--background-color);
     border-radius: 10px;
     width: 100%;
     max-width: 200px;
     margin: 1rem auto;
 }
+.join-btn{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
  footer form{
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
     border: 1px solid var(--background-color);

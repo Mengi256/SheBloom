@@ -15,3 +15,5 @@ icon_btn.addEventListener("click", function (e) {
 const year = document.querySelector("#year");
   const today = new Date();
 year.textContent = today.getFullYear()
+
+
