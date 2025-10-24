@@ -468,8 +468,9 @@ i{
     padding: 2rem;
 }
 .contact-us{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+
     gap: 1.8rem;
     background-color:#f3daf3;
     padding: 1.6rem;
