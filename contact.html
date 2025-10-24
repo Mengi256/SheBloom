@@ -17,7 +17,7 @@
         <div class="header-image"> 
         <img class="sheBloom-logo" src="images/logo.webp" alt="SheBloom Logo">
         <h1 class="home-heading">Contact Us </h1>
-            <p>We had love to hear from you! Whether you want to support,volunteer,or simply learn more about our work, your message means alot to us</p>
+            <p>We had love to hear from you! Whether you want to support,volunteer,or simply learn more about our work, your message means alot to us.</p>
              
         </div> 
         <nav>
@@ -30,32 +30,34 @@
         <div class="contact-section"> 
         <div class="contact-us">
             <p>At <strong>SheBloom</strong>, we believe every act of kindness helps a girl bloom with dignity and hope.</p>
-            <div class="contact">
+            <ul class="contact-lists">
+                <li class="contact-list"> 
                 <ion-icon name="mail-outline"></ion-icon>
-                <span>Email</span>
-                <a href="mailto:shebloom256
-            gmail.com">shebloom256@gmail.com</a>
-            </div>
-            <div class="contact">
+                <span>Email:</span>
+                <a class="contact-link" href="mailto:shebloom256@gmail.com">shebloom256@gmail.com</a>
+                </li>
+            <li class="contact-list">
              <ion-icon name="call-outline"></ion-icon>  
              <span>Phone/Whatsapp:</span>
-             <p>+256792613689 / +256703544245</p>
-            </div>
-            <div class="contact">
+             <p>+256792613689</p>
+            </li>
+            <li class="contact-list">
                <ion-icon name="location-outline"></ion-icon>
                <span>Location:</span> 
-               <p>Busoga Region, Eatern Uganda</p>
-            </div>
+               <p>Busoga Region, Eastern Uganda</p>
+               </li>
+            </ul>
             
         </div>
+        
         <form class="contact-us-form" method="post" action="https://form.submit.co/shebloom256@gmail.com">
-
+            <h3 class="contact-us-form-heading">Send us a message</h3>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="username" required>
+            <input type="text" id="name" name="name" required>
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="useremail" required>
+            <input type="email" id="email" name="email" required>
             <label for="message">Write us a message</label>
-            <textarea id="message" name="message" row="6" placeholder=" Type your message here---" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder=" Type your message here---" required></textarea>
             <button type="submit" class="message-btn">Send Message</button>
         </form>
         </div>
