@@ -663,7 +663,7 @@ footer{
 }
 .join-btn{
     background-color: var(--secondary-color);
-    color: var(--background-color);
+    color:var(--primary-color);
 }
 
  .footer form{
