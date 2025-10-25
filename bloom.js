@@ -30,7 +30,7 @@ if (menuHumburger && navigation) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const logo = document.querySelector(".sheBloom-logo");
+  const logo = document.querySelector(".logo");
   const header_btn = document.querySelector(".header-btn")
   if (logo && header_btn) {
     // Delay slightly for smoother effect

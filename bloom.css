@@ -72,10 +72,13 @@ margin: 1rem;
 .sheBloom-logo{
    width: 10rem;
     height: auto;
-    transform: translateY(-100%);
+   
+   
+}
+.logo{
+ transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.6s ease-out , opacity 0.6s ease-out;
-   
 }
 .header-btn{
     transform: translateY(100%);
@@ -86,7 +89,7 @@ margin: 1rem;
     transform: translate(0);
     opacity: 1;
 }
-.sheBloom-logo.slide-in{
+.logo.slide-in{
     transform: translateY(0);
     opacity: 1;
 }
@@ -107,6 +110,12 @@ margin: 1rem;
     border-radius: 10px;
     cursor: pointer;
 }
+.nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+}
 
 #navigation {
     position: fixed;
@@ -116,7 +125,7 @@ margin: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     padding: 1rem;
     transform: translateX(-100%);
@@ -128,7 +137,7 @@ margin: 1rem;
     transform: translateX(0);
     background-color: var(--secondary-color);
 }
-#navigation li{
+#navigation li, .nav-img{
     display: none;
 }
 #navigation.show li{
@@ -686,8 +695,9 @@ footer{
     background-color:var(--background-color);
     border: none;
 }
-.footer p{
+footer p{
     color: var(--background-color);
+    padding: 2rem;
 }
 .footer label, .footer li{
     
@@ -739,8 +749,51 @@ footer{
 /**************************************************/
 
 @media(min-width: 700px){
-    header{
-        background: url(images/founder.webp);
+     header{
+        background: linear-gradient(to bottom, var(--background-color),var(--background-color), var(--secondary-color),var(--background-color), var(--background-color));
+    }   
+    #navigation{
+    transform: none;
+    position: static;
+    flex-direction: row;
+    background: none;
+    justify-content: flex-end;
+    height: auto;
+}
+    #menu{
+        display: none;
+    }
+ #navigation li, .nav-img {
+        display: block;
+    }
+    .nav-btn:link,
+    .nav-btn:visited{
+        display: inline-block;
+    background-color:#ff4500;
+    padding: 1rem 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    }
+    .nav{
+        border-bottom: 4px solid #ff4500;
+        border-radius: 10px;
+        max-width: 70rem;
+        margin: 1rem auto;
+    }
+    .nav-img{
+        width: 14rem;
+        
+    }
+  
+    #navigation li a:link,
+    #navigation li a:visited{
+        font-size: 1rem;
+        color: var(--secondary-color);
+        
     }
     /* HOME PAGE */
 .motto-section{
@@ -778,10 +831,7 @@ padding: 2rem;
     padding: 2rem;
     
 }
-/* .last-story{
-    grid-column: 1/-1;
-    max-width: 100%;
-} */
+
 .mission-vision{
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -831,7 +881,9 @@ padding: 2rem;
 body{
     background-color: var(--background-color);
 }
-
+header{
+        background: linear-gradient(to bottom, var(--background-color),var(--background-color), var(--secondary-color),var(--background-color), var(--background-color), var(--secondary-color));
+    } 
 
 .header-image{
     max-width: 50rem;
