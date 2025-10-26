@@ -717,21 +717,22 @@ textarea{
            /*   FOOTER   */
 /**************************************************/
 footer{
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     background-color: var(--primary-color);
 }
 .footer-form{
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.8rem;
     padding: 0 1rem 1rem 0;
    
 }
 footer h5{
     padding-top: 1.2rem;
+    font-size: 1.8rem;
     color: var(--background-color);
     text-align: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     font-family: var(--heading-font-family);
     
 }
@@ -743,11 +744,12 @@ footer h5{
    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
    border: 1px solid rgba(255,255,255,0.3);
    outline: none;
-    padding: 0.4rem;
+    padding: 0.8rem;
     text-align: center;
+    font-size: 0.6rem;
 }
 .join-btn{
-    padding: 0.4rem;
+    padding: 0.8rem;
     background-color: var(--accentcolor1);
     border: none;
     color:var(--primary-color);
@@ -781,7 +783,7 @@ footer h5{
 .quick-link:visited{
     text-decoration: none;
     color: var(--accentcolor1);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .links-box{
@@ -820,7 +822,8 @@ footer h5{
     opacity: 1;
 }
 .quick-icon{
-   width: 1.6rem;
+   width: 4rem;
+   padding: 0.8rem;
  background:rgba(255,255,255,0.2);
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(6px);
