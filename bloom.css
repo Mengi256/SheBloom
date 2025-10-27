@@ -90,23 +90,29 @@ header{
 }
 
 #menu{
-    width: 1.6rem;
+    width: 2rem;
     background:var(--accentcolor2);
-    height: 0.17rem;
+    height: 0.2rem;
     position: absolute;
     top:2.6rem;
-    right: 1rem;
+    right: 1.4rem;
+    border-radius: 2px;
 }
 .header-lists{
     display: none;
+    padding: 1rem 4rem 0.4rem 4rem ;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    text-align: center;
    }
 #menu::before,#menu::after{
     content: "";
-     width: 1.6rem;
+     width: 2rem;
     background:var(--accentcolor2);
-    height: 0.17rem;
+    height: 0.2rem;
     position: absolute;
-    transition: all 0.3s;
+    transition: all 0.4s;
+    border-radius:2px ;
    
 }
 #menu::before{
@@ -116,8 +122,6 @@ header{
     top: 0.4rem;
 }
 #navigation{
-    
-    
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -129,14 +133,14 @@ header{
     display: inline-block;
     text-decoration: none;
     color: var(--background-color);
-    font-family: var(--paragraphy-font-family);
+    font-family: var(--heading-font-family);
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 #menu.show{
     background-color: transparent;
-    left: 1rem;
-
-
-}
+    }
 
 #menu.show::after{
     transform: rotate(45deg);
@@ -152,15 +156,15 @@ header{
 }
 .nav.show{
     background-color: #330033;
-    height: 50vh;
+    height: 80vh;
 
 }
 .nav.show .nav-img , .nav.show .tagline{
     display: none;
 } 
 #navigation.show{
-  
-    padding: 4rem 0 4rem 4rem;
+    
+    padding: 0 5rem 0 0;
     
 }
 #navigation.show .header-lists{
