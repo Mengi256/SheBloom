@@ -100,7 +100,7 @@ header{
 }
 .header-lists{
     display: none;
-    padding: 1rem 4rem 0.4rem 4rem ;
+    padding: 1.6rem 4rem 0.4rem 4rem ;
     border-bottom: 2px solid rgba(255,255,255,0.2);
     border-radius: 10px;
     text-align: center;
@@ -156,7 +156,7 @@ header{
 }
 .nav.show{
     background-color: #330033;
-    height: 80vh;
+    height: 100%;
 
 }
 .nav.show .nav-img , .nav.show .tagline{
