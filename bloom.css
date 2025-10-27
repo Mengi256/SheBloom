@@ -8,7 +8,9 @@ box-sizing: border-box;
   --primary-color: #330033;
   --secondary-color: #800080;
   --accentcolor1: #ee8eee;
+  --accentcolor2:#e63946;
   --background-color: #f2e6f2;
+  --statement-font-family: "Lora",sans-serif;
   --paragraphy-font-family: "Raleway", sans-serif;
   --heading-font-family: "Roboto",sans-serif;
 }
@@ -28,8 +30,9 @@ p{
 }
  h1,h2,h4,h6,a{
     font-family: var(--heading-font-family);
-   text-align: center;
-} section{
+   text-align: center;}
+
+/*  section{
 
   opacity: 0;
    transform: translateY(50px);
@@ -40,7 +43,7 @@ section.scroll{
   opacity: 1;
   transform: translateY(0);
    
-}
+} */
 
 img{
     width: 100%;
@@ -65,31 +68,30 @@ header{
   display: grid;
   width: 100%;
   height: 6rem;
-    grid-template-columns:  2rem 1fr auto;
+  background-color: var(--accentcolor1);
+    grid-template-columns:  1fr auto;
     align-items: center;
     gap: 4rem;
-    background-color:var(--accentcolor1);
     position: fixed;
     top: 0;
     z-index: 1000;
+
 }
 
-.nav-img{
-    width: 6rem;
-    padding: 1rem 0 1rem 1rem;
+.nav-para{
+    font-weight: 700;
+    
 }
 .tagline{
  
-   font-size: 0.5rem;
-   background-color: #f2e6f2;
-    font-weight: 500;
-    color: var(--primary-color);
-    margin: 0 auto;
+   font-weight: 700;
+    color: var(--background-color);
+    text-align: center;
 }
 
 #menu{
     width: 1.6rem;
-    background: #ff4500;
+    background:var(--accentcolor2);
     height: 0.17rem;
     position: absolute;
     top:2.6rem;
@@ -101,7 +103,7 @@ header{
 #menu::before,#menu::after{
     content: "";
      width: 1.6rem;
-    background:#ff4500;
+    background:var(--accentcolor2);
     height: 0.17rem;
     position: absolute;
     transition: all 0.3s;
@@ -176,30 +178,36 @@ margin-top: 6rem;
 .hero-box{
 display: flex;
 flex-direction: column;
-align-items: center;
-gap: .8rem;
-
 padding: 1rem; 
+align-items: center;
+
 }
 
 
 .home-heading{
-   font-size: 2.8rem;
+    color: var(--background-color);
+   font-size: 1.8rem;
   padding-top:2rem ;
+  text-transform: uppercase;
 
 }
 
 .donate-btn:link,
 .donate-btn:visited{
     display: inline-block;
-    background-color:#ff4500;
+    background-color:var(--accentcolor2);
     padding: 0.6rem 1.4rem;
     color: #fff;
     text-decoration: none;
     margin: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
+   cursor: pointer;
     transition: 0.3s all;
+    font-family: var(--heading-font-family);
+}
+.volunteer-btn:link,
+.volunteer-btn:visited{
+    background-color: var(--accentcolor1);
+    color: var(--primary-color);
 }
 .donate-btn:hover,
 .donate-btn:active{
@@ -211,17 +219,69 @@ padding: 1rem;
 /**************************************************/
            /*   HOME MAIN SECTION   */
 /**************************************************/
+.statement-section{
+    padding: 2.2rem;
+}
+.statement-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+     box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+   
+}
+.statement-para{
+     font-family:var(--statement-font-family);
+     color: #444;
+    line-height: 1.8;
+}
+.statement-said{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+}
+.founder-name{
+    font-family: var(--heading-font-family);
+    
+}
+.shebloom-founder{
+   font-size: 0.8rem;
+   filter: contrast(0);
+
+   
+}
 .reality-section{
 
-    margin: 2rem 0;
+ padding: 2.2rem;
 }
 .reality-box{
     display: grid;
     grid-template-columns: 1fr;
+     gap: 1rem;
+      box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+}
+.reality-info{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 1.4rem;
     gap: 1rem;
-    padding: 1rem;
- 
+}
+.reality-heading{
+    font-size: 1.4rem;
+   
+}
+.reality-link:link,
+.reality-link:visited{
+    display: inline-block;
+    color: var(--accentcolor2);
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accentcolor2);
+    padding:0 1rem 0.2rem 1rem;
     
 }
 
@@ -515,7 +575,7 @@ i{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid #ff4500;
+    border: 1px solid var(--accentcolor2);
     padding: 1rem;
     
     margin: 1rem 2rem;
@@ -540,14 +600,14 @@ i{
 
 }
 .highlight{
-    color: #ff4500;
+    color: var(--accentcolor2);
     font-size: 2.6rem;
     font-style: italic;
 }
 .remitly-link:link,
 .remitly-link:visited{
     display: inline-block;
-    color: #ff4500;
+    color: var(--accentcolor2);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
@@ -584,7 +644,7 @@ i{
     width: 100%;
     max-width: 4rem;
     border-radius: 50%;
-    background-color: #ff4500;
+    background-color: var(--accentcolor2);
     padding: 0.8rem;
 }
 .goal h3{
@@ -646,7 +706,7 @@ i{
 .contact-link:visited{
     display: inline-block;
     text-decoration: none;
-    color: #ff4500;
+    color: var(--accentcolor2);
     font-size: 0.8rem;
 }
 .contact-us-form-heading{
@@ -656,7 +716,7 @@ i{
     margin-bottom: 1rem;
 }
 .contact-icon{
-    color: #ff4500;
+    color: var(--accentcolor2);
   
     border-radius: 50%;
     padding: 0.6rem;
@@ -884,7 +944,7 @@ footer h5{
     .nav-btn:link,
     .nav-btn:visited{
         display: inline-block;
-    background-color:#ff4500;
+    background-color:var(--accentcolor2);
      padding: 0.6rem 1.4rem;
     color: #fff  !important;
     text-decoration: none;
@@ -917,7 +977,7 @@ padding: 2rem;
 }
 .reality-para{
     font-size: 0.8rem;
-    border-left: 3px solid #ff4500;
+    border-left: 3px solid var(--accentcolor2);
     border-radius: 10px;
     padding: 0.8rem;
     
@@ -955,7 +1015,7 @@ grid-template-columns: 1fr 1fr;
 }
 .values-box, .volunteer-box{
     box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
-    border-left: 4px solid #ff4500;
+    border-left: 4px solid var(--accentcolor2);
     border-radius: 10px;
 }
 .values-box{
@@ -1009,10 +1069,10 @@ padding: 2rem;
 }
 .reality-para{
     font-size: 1rem;
-    border-left: 6px solid #ff4500;
+    border-left: 6px solid var(--accentcolor2);
     border-radius: 10px;
     padding: 4rem;
-    border-right: 6px solid #ff4500;
+    border-right: 6px solid var(--accentcolor2);
 }
 .reality-img{
     border-radius: 10px;
