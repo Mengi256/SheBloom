@@ -380,6 +380,9 @@ align-items: center;
 
 .sheblooms{
     background:linear-gradient(to bottom,rgba(144, 10, 206, 0.1),rgba(21, 1, 36, 0.1)),url(images/flower.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1rem;
     margin: 2rem 1rem ;
     border-radius: 10px;
@@ -388,6 +391,13 @@ align-items: center;
 .sheblooms p{
     color: var(--background-color);
     font-weight: 500;
+    background:rgba(255,255,255,0.09);
+   backdrop-filter: blur(1px);
+   -webkit-backdrop-filter: blur(1px);
+   border-radius: 4px;
+   box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+   border: 1px solid rgba(255,255,255,0.3);
+   
 }
 i{
     padding: 1rem;
