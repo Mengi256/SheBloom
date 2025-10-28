@@ -467,9 +467,9 @@ i{
     grid-template-columns: 1fr;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    
     width: 100%;
-    margin: 1rem;
+    
 }
 
 .story{
@@ -751,8 +751,11 @@ display: flex;
 .contact-link:visited{
     display: inline-block;
     text-decoration: none;
-    color: var(--accentcolor2);
-    font-size: 0.8rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+.phone-number{
+    font-family: var(--heading-font-family);
 }
 .contact-us-form-heading{
     font-family: var(--heading-font-family);
@@ -761,10 +764,12 @@ display: flex;
     margin-bottom: 1rem;
 }
 .contact-icon{
-    color: var(--accentcolor2);
-  
+  font-size: 2rem;
+    color:#fff;
+    font-weight: 900;
     border-radius: 50%;
     padding: 0.6rem;
+    background-color: var(--accentcolor2);
     box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
 }
 .contact-us-form{
