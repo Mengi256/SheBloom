@@ -384,7 +384,6 @@ align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1rem;
-    margin: 2rem 1rem ;
     border-radius: 10px;
     
 }
@@ -404,26 +403,28 @@ i{
     display: block;
    
 }
+.donation-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 1rem;
+}
+.home-donations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
+}
 .impacts{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    gap: 0.4rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    
 }
 
-.learn-more-btn:link,
-.learn-more-btn:visited{
-    display: inline-block;
-    background-color:var(--accentcolor1);
-    color: var(--primary-color);
-}
 
-.learn-more-btn:hover,
-.learn-more-btn:active{
-    background-color:#800080 ;
-}
 
 .donate-box{
     display: flex;
