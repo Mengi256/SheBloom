@@ -200,7 +200,7 @@ align-items: center;
 .donate-btn:visited{
     display: inline-block;
     background-color:var(--accentcolor2);
-    padding: 0.6rem 1.4rem;
+    padding: 1rem 1.8rem;
     color: #fff;
     text-decoration: none;
     margin: 1rem;
