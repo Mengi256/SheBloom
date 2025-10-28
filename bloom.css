@@ -173,7 +173,7 @@ display: block;
       /*  HERO SECTION */
 
 .header-hero{
-background:url(images/founder.webp);
+background:linear-gradient(rgba(34,34,34, 0.6), rgba(34,34,34, 0.6)),url(images/hero.webp);
 background-position: center;
 background-size: cover;
 margin-top: 6rem;
