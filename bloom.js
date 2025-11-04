@@ -1,18 +1,40 @@
 
 
-const menuHumburger = document.querySelector("#menu");
+// Hamburger menu toggle
+const menuHamburger = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
-const header_nav = document.querySelector(".nav");
+const headerNav = document.querySelector(".nav");
+const header = document.querySelector(".header");
+const header_logo = document.querySelector(".header-logo");
 
-if (menuHumburger && navigation && header_nav) {
-  menuHumburger.addEventListener("click", function () {
-    menuHumburger.classList.toggle("show");
+if (menuHamburger && navigation && headerNav) {
+  menuHamburger.addEventListener("click", function () {
+    menuHamburger.classList.toggle("show");
     navigation.classList.toggle("show");
-    header_nav.classList.toggle("show")
+    headerNav.classList.toggle("show");
+    header.classList.toggle("show");
+    header_logo.classList.toggle("show");
   });
 }
 
+// Dropdown toggle for "What We Do"
+const whatWeDoBtn = document.querySelector(".what-we-do-btn");
+const whatWeDo = document.querySelector(".what-we-do");
 
+if (whatWeDoBtn && whatWeDo) {
+  whatWeDoBtn.addEventListener("click", function (e) {
+    // Prevent link navigation
+    e.preventDefault();
+
+    // Toggle submenu visibility
+    whatWeDoBtn.classList.toggle("submenu");
+    whatWeDo.classList.toggle("submenu");
+
+    // Optional: update ARIA attribute for accessibility
+    const expanded = whatWeDoBtn.getAttribute("aria-expanded") === "true";
+    whatWeDoBtn.setAttribute("aria-expanded", !expanded);
+  });
+}
 
 
 
