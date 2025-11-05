@@ -5,7 +5,7 @@ const menuHamburger = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
 const headerNav = document.querySelector(".nav");
 const header = document.querySelector(".header");
-const header_logo = document.querySelector(".header-logo");
+const nav_para = document.querySelector(".nav-para");
 
 if (menuHamburger && navigation && headerNav) {
   menuHamburger.addEventListener("click", function () {
@@ -13,7 +13,7 @@ if (menuHamburger && navigation && headerNav) {
     navigation.classList.toggle("show");
     headerNav.classList.toggle("show");
     header.classList.toggle("show");
-    header_logo.classList.toggle("show");
+    nav_para.classList.toggle("show");
   });
 }
 
@@ -36,6 +36,23 @@ if (whatWeDoBtn && whatWeDo) {
   });
 }
 
+const whoWeAreBtn = document.querySelector(".who-we-are-btn");
+const whoWeAre = document.querySelector(".who-we-are");
+
+if (whoWeAreBtn && whoWeAre) {
+  whoWeAreBtn.addEventListener("click", function (e) {
+    // Prevent link navigation
+    e.preventDefault();
+
+    // Toggle submenu visibility
+    whoWeAreBtn.classList.toggle("submenu");
+    whoWeAre.classList.toggle("submenu");
+
+    // Optional: update ARIA attribute for accessibility
+    const expanded = whoWeAreBtn.getAttribute("aria-expanded") === "true";
+    whoWeAreBtn.setAttribute("aria-expanded", !expanded);
+  });
+}
 
 
 
