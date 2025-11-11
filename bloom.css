@@ -135,13 +135,7 @@ li{
 .shebloom-logo{
     width: 10rem;
 }
-#navigation{
-    display: flex;
-    flex-direction: column;
-   gap: 1rem;
 
-   
-}
 .header-lists:last-child{
     border-bottom:none ;
 }
@@ -173,7 +167,12 @@ display: block;
  
     
 }
-
+#navigation.show{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 0 0 2rem;
+}
 .header-donate{
     background-color: var(--accentcolor2);
     max-width: 16rem;
@@ -188,7 +187,9 @@ display: block;
     
 }
 
-
+.shebloom-logo.show{
+    display: none;
+}
 .para{
     font-weight: 500;
     text-align: left;
@@ -266,6 +267,7 @@ align-items: center;
      box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
    
 }
+
 .statement-para{
      font-family:var(--statement-font-family);
      color: #444;
@@ -483,9 +485,39 @@ i{
     color: var(--primary-color);
 }
 
+/**************************************************/
+           /*   DIGNITY KIT PAGE  */
+/**************************************************/
+.kits-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+    padding: 1rem;
+}
 
-
-
+.kits-section div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.kits-section h3{
+    font-family: var(--heading-font-family);
+    color: var(--primary-color);
+}
+.kits-section li{
+    font-family: var(--paragraphy-font-family);
+}
+ th, td{
+    padding: 1rem;
+}
+th{
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+td{
+    font-family: var(--paragraphy-font-family);
+}
 /**************************************************/
            /*   ABOUT US PAGE   */
 /**************************************************/

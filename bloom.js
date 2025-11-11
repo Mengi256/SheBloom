@@ -6,6 +6,7 @@ const navigation = document.querySelector("#navigation");
 const headerNav = document.querySelector(".nav");
 const header = document.querySelector(".header");
 const nav_para = document.querySelector(".nav-para");
+const shebloom_logo = document.querySelector(".shebloom-logo")
 
 if (menuHamburger && navigation && headerNav) {
   menuHamburger.addEventListener("click", function () {
@@ -14,6 +15,7 @@ if (menuHamburger && navigation && headerNav) {
     headerNav.classList.toggle("show");
     header.classList.toggle("show");
     nav_para.classList.toggle("show");
+    shebloom_logo.classList.toggle("show")
   });
 }
 
