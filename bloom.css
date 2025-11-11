@@ -61,9 +61,8 @@ li{
     display:grid;
     grid-template-columns: 1fr ;
     position: relative;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     background-color:#faf0fa;
-   
     position: fixed;
     width: 100%;
     top: 0;
@@ -122,16 +121,25 @@ li{
 }
 
 .nav{
+    
    display: none;
 
   
     
 }
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shebloom-logo{
+    width: 10rem;
+}
 #navigation{
     display: flex;
     flex-direction: column;
    gap: 1rem;
-   padding-top: 2rem;
+
    
 }
 .header-lists:last-child{
@@ -152,47 +160,32 @@ li{
 
 }
 
-.what-we-do , .who-we-are{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-   
-  
-    
- 
-    
-}
-.sub-lists{
-    display: none;
-    
 
-}
-
-.what-we-do a:link,
-.what-we-do a:visited,
-.who-we-are a:link,
-.who-we-are a:visited{
-    text-decoration: none;
-    color:#666;
- 
-    font-weight: 600;
-    font-size: 0.8rem;
-    
-}
-
-
-.what-we-do.submenu .sub-lists , .who-we-are.submenu .sub-lists{
-    display: block;
-    list-style-type: circle;
-}
 .nav.show{
-    display: block;
-  
+display: block;
+   position: fixed;
+   z-index: 1000;
+   background-color: var(--background-color);
+   width: 100%;
+   height: 70%;
+   margin-top: -2.98rem;
    
+ 
+    
+}
 
-   
-  
+.header-donate{
+    background-color: var(--accentcolor2);
+    max-width: 16rem;
+    margin: 0 auto;
+}
+#donate-btn:link,
+#donate-btn:visited{
+    display: block;
+    color: var(--background-color);
+      padding: 1rem 1.8rem;
+      margin: .4rem 0;
+    
 }
 
 
@@ -211,7 +204,7 @@ li{
 background:linear-gradient(rgba(34,34,34, 0.6), rgba(34,34,34, 0.6)),url(images/hero.webp);
 background-position: center;
 background-size: cover;
-margin-top: 4rem;
+margin-top: 8rem;
 
 }
 .hero-box{
@@ -1014,10 +1007,21 @@ footer h5{
 }
 
 @media(min-width: 700px){
+
+    header{
+        display: none;
+    }.header-hero{
+        margin-top: 0;
+    }
+  
     .tagline{
         display: none;
     }
+    header{
+        grid-template-columns: 1fr auto;
+    }
  .nav{
+    display: block;
     height: 8rem;
     grid-template-columns: 1fr 1fr auto;
  }
