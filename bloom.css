@@ -1156,9 +1156,10 @@ body{
     display: block;
 }
 
-.hero-box{
-    max-width: 50rem;
+main{
+    max-width: 60rem;
     margin: 1rem auto;
+    
 }
 .reality-box{
 grid-template-columns: 1fr 1fr;
