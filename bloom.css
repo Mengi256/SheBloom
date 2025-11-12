@@ -123,17 +123,17 @@ li{
 .nav{
     
    display: none;
-
-  
-    
 }
 .nav-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 60rem;
+    margin: .6rem auto;
 }
 .shebloom-logo{
-    width: 10rem;
+    width: 6rem;
+    
 }
 
 .header-lists:last-child{
@@ -153,7 +153,14 @@ li{
      
 
 }
-
+.nav-header-links:hover,
+.nav-header-links:active{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+#navigation{
+    display: flex;
+}
 
 .nav.show{
 display: block;
@@ -1129,7 +1136,9 @@ grid-template-columns: 1fr 1fr;
     padding: 2rem;
     
 }
-
+.header-lists{
+    border: none;
+}
 .mission-vision{
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
