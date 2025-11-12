@@ -700,10 +700,11 @@ display: flex;
     display: flex;
     flex-direction: column;
     gap: .6rem;
-    padding: .6em;
+    padding: 1rem 0 0 2rem;
 }
 .donate-list li{
     list-style: circle;
+    font-family: var(--paragraphy-font-family);
 }
 .transfers{
     display: flex;
