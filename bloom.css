@@ -33,7 +33,7 @@ p{
     font-family: var(--heading-font-family);
    text-align: center;}
 
-/*  section{
+ section{
 
   opacity: 0;
    transform: translateY(50px);
@@ -44,7 +44,7 @@ section.scroll{
   opacity: 1;
   transform: translateY(0);
    
-} */
+} 
 
 img{
     width: 100%;
@@ -1027,6 +1027,7 @@ footer h5{
 .footer-para{
     color: var(--background-color);
     padding-top: 1rem;
+    text-align: center;
 }
 
 
