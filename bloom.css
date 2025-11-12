@@ -679,6 +679,9 @@ display: flex;
 /**************************************************/
            /*  DONATE PAGE   */
 /**************************************************/
+.donate-main-section{
+    margin: 2rem 1rem;
+}
 .donate-sec{
     display: flex;
     flex-direction:column;
