@@ -306,7 +306,9 @@ margin: 2rem auto;
   background-color: var(--background-color);
  padding: 1rem
 }
-
+.reality-section{
+    padding: 1rem;
+}
 .reality-box{
     background-color: var(--accentcolor1);
     display: grid;
