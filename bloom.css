@@ -223,6 +223,8 @@ display: flex;
 flex-direction: column;
 padding: 1rem; 
 align-items: center;
+max-width: 20rem;
+margin: 2rem auto;
 
 }
 
@@ -263,11 +265,12 @@ align-items: center;
            /*   HOME MAIN SECTION   */
 /**************************************************/
 .statement-sect{
-    padding: 2rem;
+    padding: 1rem;
+    
    
 }
 .statement-box{
-    margin: 2rem;
+    background-color: var(--accentcolor1);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -279,7 +282,7 @@ align-items: center;
 
 .statement-para{
      font-family:var(--statement-font-family);
-     color: #444;
+     color: #333;
     line-height: 1.8;
 }
 .statement-said{
@@ -304,10 +307,13 @@ align-items: center;
  padding: 2.2rem;
 }
 .reality-box{
+    background-color: var(--accentcolor1);
     display: grid;
     grid-template-columns: 1fr;
      gap: 1rem;
       box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
 }
 .reality-info{
     display: flex;
@@ -329,6 +335,22 @@ align-items: center;
     border-bottom: 2px solid var(--accentcolor2);
     padding:0 1rem 0.2rem 1rem;
     
+}
+.impacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    
+}
+.impacts h4{
+    background-color: var(--accentcolor1);
+    width: 100%;
+    padding: 1rem;
+}
+ .impacts p{
+    color: var(--background-color);
 }
 
 .challenges-section{
@@ -438,6 +460,7 @@ align-items: center;
    border-radius: 4px;
    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
    border: 1px solid rgba(255,255,255,0.3);
+   padding: 1rem;
    
 }
 i{
@@ -456,14 +479,6 @@ i{
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.6rem;
-}
-.impacts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    
 }
 
 
@@ -966,6 +981,8 @@ textarea{
 footer{
     padding: 2rem 1rem 1rem 1rem;
     background-color: var(--primary-color);
+    border-top: 2px solid var(--accentcolor1);
+    border-radius: 10px;
 }
 #tagline{
     color:var(--background-color);
