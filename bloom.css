@@ -54,24 +54,73 @@ img{
 li{
     list-style: none;
 }
+.desktop-logo{
+    display: none;
+}
 
 /**************************************************/
            /*   HOME HEADER NAVIGATION SECTION   */
 /**************************************************/
+.home-page-header{
+  background: linear-gradient(rgba(32,32,32,0.6),rgba(32,32,32,0.6)), url(images/official-hero.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-page-header{
+     background: linear-gradient(rgba(32,32,32,0.6),rgba(32,32,32,0.6)), url(images/who-we-are.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.reality-page-header{
+     background: linear-gradient(rgba(32,32,32,0.6),rgba(32,32,32,0.6)), url(images/reality.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.what-we-do-header{
+     background: linear-gradient(rgba(32,32,32,0.6),rgba(32,32,32,0.6)), url(images/what-we-do.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.kits-header{
+     background: linear-gradient(rgba(32,32,32,0.6),rgba(32,32,32,0.6)), url(images/dignity-kits.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
  header{
+
   
-    display:grid;
-    grid-template-columns: 1fr ;
-    position: relative;
-    padding: 1rem 1rem 0 1rem;
-    background-color:#faf0fa;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-   
+    height: 70vh;
     
   
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.logo-box{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: #f5cdf5;
+    padding: .1rem 1rem .1rem 1rem;
+    width: 100%;
+}
+.header-donate-btn{
+    background-color: var(--accentcolor2);
+    
 }
 
 
@@ -80,8 +129,8 @@ li{
     background:var(--accentcolor2);
     height: 0.2rem;
     position: absolute;
-    top:3rem;
-    right: 1.4rem;
+     top:2rem;
+    right: 1.4rem; 
     border-radius: 2px;
 }
 .header-lists{
@@ -123,24 +172,13 @@ li{
     
 }
 
-.nav{
-    
-   display: none;
-}
-.nav-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 60rem;
-    margin: .6rem auto;
-}
 .shebloom-logo{
-    width: 6rem;
+    width: 4rem;
     
 }
 
 .header-lists:last-child{
-    border-bottom:none ;
+    border-bottom:none;
 }
 
 .nav-header-links:link,
@@ -161,18 +199,19 @@ li{
     color: var(--primary-color);
     text-decoration: underline;
 }
-#navigation{
-    display: flex;
+.hidden{
+    display: none;
 }
 
 .nav.show{
-display: block;
+   display: block;
    position: fixed;
    z-index: 1000;
    background-color: var(--background-color);
    width: 100%;
-   height: 70%;
-   margin-top: -1rem;
+   height: 100vh;
+   margin-top: 3.8rem;
+
    
  
     
@@ -183,51 +222,83 @@ display: block;
     gap: 2rem;
     padding: 0 0 0 2rem;
 }
-.header-donate{
-    background-color: var(--accentcolor2);
-    max-width: 16rem;
-    margin: 0 auto;
-}
+
 #donate-btn:link,
 #donate-btn:visited{
     display: block;
     color: var(--background-color);
-      padding: 1rem 1.8rem;
-      margin: .4rem 0;
+      padding: .2rem  ;
+      
     
 }
 
-.shebloom-logo.show{
-    display: none;
-}
-.para{
-    font-weight: 500;
-    text-align: left;
-}
-.nav-para.show{
-    display: none;
-}
+
 
 
 /*  HERO SECTION */
 
 .header-hero{
-background:linear-gradient(rgba(34,34,34, 0.6), rgba(34,34,34, 0.6)),url(images/hero-background.webp);
-background-position: center;
-background-size: cover;
-margin-top: 6rem;
-
+    background: linear-gradient(rgba(32,32,32,0.1), rgba(32,32,32,0.6)), url(images/official-hero.webp);
+    background-position:center ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    
+    
+}
+.reality-hero{
+    background: linear-gradient(rgba(32,32,32,0.1), rgba(32,32,32,0.6)), url(images/reality.webp);
+    background-position:center ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    
+    
+}
+.about-hero{
+    background: linear-gradient( rgba(32,32,32,0.6)), url(images/who-we-are.webp);
+    background-position:center ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    margin-top: 8rem;
+    
+}
+.what-we-do-hero{
+    background: linear-gradient( rgba(32,32,32,0.6)), url(images/what-we-do.webp);
+    background-position:center ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    
+    
 }
 .hero-box{
 display: flex;
 flex-direction: column;
 padding: 1rem; 
+gap: 2rem;
 align-items: center;
-max-width: 20rem;
-margin: 2rem auto;
+max-width: 30rem;
+margin: 4rem auto;
 
 }
+.kit-hero{
 
+    background: linear-gradient( rgba(32,32,32,0.6)), url(images/dignity-kits.webp);
+    background-position:center ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+}
+.nav{
+    display: none;
+}
 
 .home-heading{
     color: var(--background-color);
@@ -278,7 +349,7 @@ background-color: #faddfa;
     padding: 1rem;
      box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
      max-width: 50rem;
-     margin: -4rem auto 2rem auto;
+     margin: -1.8rem auto 2rem auto;
    
 }
 
@@ -454,8 +525,11 @@ background-color: #faddfa;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 100%;
     padding: 1rem;
     border-radius: 10px 10px 0 0;
+    max-width: 60rem;
+    margin: 0 auto;
     
 }
 .sheblooms p{
@@ -553,9 +627,13 @@ td{
     font-family: var(--paragraphy-font-family);
 }
 table{
-    
-    border: 2px solid #faddfa;
+    border-collapse:collapse;
+     
     margin-top: 1rem;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+}
+table,th,td{
+border: 2px solid #fff;
 }
 .how-to-help-list{
     display: flex;
@@ -1152,72 +1230,31 @@ footer h5{
 /**************************************************/
            /*   RESPONSIVE    */
 /**************************************************/
-@media(min-width:470px){
-/* .tagline{
-    background: none;
-   font-size: 1rem;
-    font-weight: 900;
-    color: var(--primary-color);
-    margin: 0 auto;
-} */
 
-}
+
 
 @media(min-width: 700px){
+  header{
+    background: none;
+    height: 0;
+  }
+  #hidden-motto{
+    display: none;
+  }
 
-    header{
-        display: none;
-    }.header-hero{
-        margin-top: 0;
+.header-hero,.reality-hero, .about-hero,.what-we-do-hero, .kit-hero{
+        display: block;
+        margin-top:0;
+        height: 100vh;
     }
-  .header-hero{
-    height: 60vh;
+  #donate-btn:link,
+  #donate-btn:visited{
+    display: block;
+    padding: 1rem 2rem;
   }
     
-    header{
-        grid-template-columns: 1fr auto;
-    }
- .nav{
-    display: block;
-    height: 8rem;
-    grid-template-columns: 1fr 1fr auto;
- }
-    #navigation{
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-}
-    #menu{
-        display: none;
-    }
- #navigation li, .nav-img {
-        display: block;
-    }
-    .nav-btn:link,
-    .nav-btn:visited{
-        display: inline-block;
-    background-color:var(--accentcolor2);
-     padding: 0.6rem 1.4rem;
-    color: #fff  !important;
-    text-decoration: none;
-    margin: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
 
-    }
-    
-    .nav-img{
-        width: 8rem;
-        
-    }
-  
-    #navigation li a:link,
-    #navigation li a:visited{
-        font-size: 1rem;
-        font-weight: 800;
-        color: var(--secondary-color);
-        
-    }
+
     /* HOME PAGE */
 .reality-box{
 grid-template-columns: 1fr 1fr;
@@ -1347,15 +1384,91 @@ figure img{
 
 @media(min-width:900px)
 { /* HOME PAGE */
-body{
-    background-color: var(--background-color);
-}
-.tagline{
-    display: block;
+
+.logo-box{
+    display: none;
 }
 
+.header-donate-btn{
+    display: none;
+}
+.desktop-logo{
+    width: 6rem;
+    display: block;
+}
+ .nav{
+    display: block;
+    z-index: 1001;
+    
+ }
+ .nav-box{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--background-color);
+    position: fixed;
+    gap: 1rem;
+    width: 100%;
+}
+.hidden{
+    display: block;
+
+}
+.current{
+    text-decoration: underline;
+}
+#desktop-donate-btn:link,
+#desktop-donate-btn:visited{
+    display: block;
+    background-color: var(--accentcolor2);
+    color: var(--background-color) !important;
+    padding: 1rem ;
+}
+    
+#navigation{
+    display: flex;
+    align-items: center;
+    
+}
+    #menu{
+        display: none;
+    }
+ 
+    .nav-btn:link,
+    .nav-btn:visited{
+        display: inline-block;
+    background-color:var(--accentcolor2);
+     padding: 0.6rem 1.4rem;
+    color: #fff  !important;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    }
+    
+    
+  
+    #navigation li a:link,
+    #navigation li a:visited{
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--secondary-color);
+        
+    }
+.header-hero{
+        
+        margin-top:7rem;
+        height: 100vh;
+    }
+    .hero-box{
+        margin: 6rem auto 6rem auto;
+        padding-top: 8rem;
+    }
+
 main{
-    max-width: 60rem;
+    max-width: 80rem;
     margin: 1rem auto;
     
 }
