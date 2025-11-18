@@ -17,16 +17,15 @@ box-sizing: border-box;
 
 body{
     background-color: #ee8eee;
-
-  color: var(--primary-color);
-  scroll-behavior: smooth;
+   color: var(--primary-color);
+    scroll-behavior: smooth;
   
  }
  
 p{
     font-family: var(--paragraphy-font-family);
     /* text-align: center; */
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0.04rem;
     color: #444;
 
@@ -201,8 +200,9 @@ grid-template-columns: 1fr 1fr 1fr;
 
 /*  HERO SECTION */
 .header-hero{
-    margin-top: 0;
+    margin: 0;
     padding: 0;
+    
 }
 .homepage-hero{
     background: linear-gradient(rgba(32,32,32,0.1), rgba(32,32,32,0.6)), url(images/official-hero.webp);
@@ -276,11 +276,11 @@ grid-template-columns: 1fr 1fr 1fr;
 .hero-box{
 display: flex;
 flex-direction: column;
-padding: 1rem; 
 gap: 2rem;
 align-items: center;
 max-width: 30rem;
 margin-top: 2.7rem;
+
 
 }
 
@@ -292,7 +292,7 @@ margin-top: 2.7rem;
     color: var(--background-color);
    font-size: 1.8rem;
   text-transform: uppercase;
- margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .donate-btn:link,
