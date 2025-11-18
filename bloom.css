@@ -1142,7 +1142,7 @@ footer h5{
      display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 1.8rem;
    
 
 }
@@ -1152,7 +1152,7 @@ footer h5{
 .quick-link:visited{
     text-decoration: none;
     color: var(--accentcolor1);
-    font-size: 1.6rem;
+    font-size: 3rem;
 }
 
 .links-box{
@@ -1191,9 +1191,9 @@ footer h5{
     opacity: 1;
 }
 .quick-icon{
-   width: 1.5rem;
+   width: 3rem;
   
- background:rgba(255,255,255,0.2);
+ background:rgba(255,255,255,0.1);
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(6px);
    border-radius: 50%;
@@ -1201,7 +1201,7 @@ footer h5{
    border-bottom: 1px solid rgba(255,255,255,0.3);
  color: var(--background-color);
  margin-bottom: -1rem;
- z-index: 1000;
+ 
 
 
 }
