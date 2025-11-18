@@ -1152,7 +1152,7 @@ footer h5{
 .quick-link:visited{
     text-decoration: none;
     color: var(--accentcolor1);
-    font-size: 6rem;
+    font-size: 4rem;
 
 }
 
@@ -1193,7 +1193,7 @@ footer h5{
     opacity: 1;
 }
 .quick-icon{
-   width: 6rem;
+   width: 4rem;
   
  background:rgba(255,255,255,0.1);
    backdrop-filter: blur(10px);
