@@ -249,7 +249,7 @@ grid-template-columns: 1fr 1fr 1fr;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 50vh;
+    
     
 
 }
@@ -260,7 +260,7 @@ grid-template-columns: 1fr 1fr 1fr;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 80vh;
+    
     
 }
 
@@ -989,7 +989,7 @@ display: flex;
 .contact-hero p{
     background-color: var(--background-color);
     padding: 1rem;
-    margin-bottom: -6rem;
+    margin:0 1rem -6rem 1rem;
 }
 .contact-list {
     display: flex;
@@ -1152,7 +1152,8 @@ footer h5{
 .quick-link:visited{
     text-decoration: none;
     color: var(--accentcolor1);
-    font-size: 3rem;
+    font-size: 6rem;
+
 }
 
 .links-box{
@@ -1184,6 +1185,7 @@ footer h5{
    
   
 }
+
 .links-box.unhide .quick-list{
     display: block;
 }
@@ -1191,7 +1193,7 @@ footer h5{
     opacity: 1;
 }
 .quick-icon{
-   width: 3rem;
+   width: 6rem;
   
  background:rgba(255,255,255,0.1);
    backdrop-filter: blur(10px);
