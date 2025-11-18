@@ -260,6 +260,7 @@ grid-template-columns: 1fr 1fr 1fr;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 80vh;
     
 }
 
@@ -957,7 +958,7 @@ display: flex;
    flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
+    padding:8rem 2rem 2rem 2rem;
     
     
 } 
@@ -984,6 +985,11 @@ display: flex;
     gap: 1rem;
     padding: 0.6rem;
 
+}
+.contact-hero p{
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: -6rem;
 }
 .contact-list {
     display: flex;
@@ -1230,6 +1236,9 @@ footer h5{
     padding: 1rem 2rem;
   }
     
+  .hide-box{
+    display: none;
+  }
 
 
     /* HOME PAGE */
@@ -1316,11 +1325,7 @@ figure img{
    padding: 1rem;
 
    
-
-}
-.last-story{
-    background-color: #330033;
-}
+} 
 .volunteer-box{
     display: flex;
     align-items: stretch;
@@ -1553,7 +1558,21 @@ padding: 2rem;
     max-width: 40rem;
     margin: 2rem auto;
 }
-
+.contact-section{
+    padding-top: 2rem;
+}
+.contact-hero p{
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin-bottom: -5rem;
+    
+}
+.discover-box{
+   
+    max-width: 40rem;
+    padding: 2rem;
+    
+}
 
 }
 
