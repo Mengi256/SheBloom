@@ -131,7 +131,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 70vh; /* makes the header cover the entire screen height */
+    min-height: 60vh; /* makes the header cover the entire screen height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1738,6 +1738,79 @@ padding: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     
 }
+
+#home-header {
+     background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)), url(images/official-hero.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about-header{
+     background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)), url(images/what-we-do.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#kit-header{
+         background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)), url(images/dignity-kits.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#donate-header{
+        background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)),url(images/girls-smiling.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#we-do-header{
+         background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)), url(images/volunteer.jpeg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#reality-header{
+        background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)),url(images/reality.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh; /* makes the header cover the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 
 
 }
