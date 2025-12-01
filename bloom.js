@@ -1,3 +1,20 @@
+fetch('bloom.json')
+.then(response => response.json())
+.then(data => {
+const container = document.getElementById('outreach-gallery');
+
+data.outreach.forEach(item => {
+const div = document.createElement('div');
+div.classList.add('outreach-item');
+
+div.innerHTML = `
+<img src="${item.url}" alt="${item.caption}">
+<p>${item.caption}</p>
+`;
+
+container.appendChild(div);
+});
+});
 
 
 // Hamburger menu toggle
@@ -59,17 +76,7 @@ if (whoWeAreBtn && whoWeAre) {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const logo = document.querySelector(".logo");
-//   const header_btn = document.querySelector(".header-btn")
-//   if (logo && header_btn) {
-   
-//     setTimeout(() => {
-//       logo.classList.add("slide-in");
-//       header_btn.classList.add("slide-in")
-//     }, 100);
-//   }
-// });
+
 
 
 
@@ -116,4 +123,6 @@ if (sections.length) {
   });
   sections.forEach(section => observer.observe(section));
 }
+
+
 
